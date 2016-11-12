@@ -57,10 +57,10 @@ spacify() {
 push() {
 	git add -A
 	git commit -m $1
-	git push -u origin $(git symbolic-ref HEAD | cut -d'/' -f3)
+	git push -u origin $(git symbolic-ref HEAD | cut -d'/' -f3-)
 }
 
-alias pull='git pull origin $(git symbolic-ref HEAD | cut -d"/" -f3)'
+alias pull='git pull origin $(git symbolic-ref HEAD | cut -d"/" -f3-)'
 
 alias pls='TF_CMD=$(TF_ALIAS=pls PYTHONIOENCODING=utf-8 TF_SHELL_ALIASES=$(alias) thefuck $(fc -ln -1 | tail -n 1)) && eval $TF_CMD && print -s $TF_CMD'
 alias n='node index.js'
