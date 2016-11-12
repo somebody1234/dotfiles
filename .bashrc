@@ -107,6 +107,7 @@ alias gsa='git submodule add'
 
 alias rm='rm -I'
 
+alias n='node index.js'
 alias q='exit'
 alias ipl='ip addr show | grep -o "192\.168\.0\.[1-9]*/" | sed s/.$//'
 alias gsu='git submodule foreach git pull origin master'
